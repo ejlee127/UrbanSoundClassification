@@ -16,7 +16,7 @@ The Urban Sound Analysis project looks at a dataset composed by J. Salamon, C. J
 
 We attacked the project by understanding sound and analyzing what happens in ML when looking at the pure data.  What we found is that the data was too complex to work effectively in the models.  We found that the condition of overfitting was ocurring.  This can be seen in the following  charts.  Where you see overfitting is on the error graph showing a large difference between the errors on the training versus the test.  Each sound file gets converted into an MFC vector which contains an array shape of 13, 44
 
-![Overfitting](Images/'Experiment 2'/neuron128.png)
+![Overfitting](Images/Experiment%202/neuron128.png)
 
 There was multiple ways of attacking overfitting.
 
