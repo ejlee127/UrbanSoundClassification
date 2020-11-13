@@ -39,7 +39,7 @@ There was multiple ways of attacking overfitting.
 
 By adding the last two Drop-out and Regularization mthods we were able to improve the modeling.  We using regularization L2 at 0.001 and dropout of .4 in this example.
 
-![Overfitting results](Images/'Experiment 2'/neuron128(of).png)
+![Overfitting results](Images/Experiment%202/neuron128(of).png)
 
 With this knowledge we continued with our attack on overfitting by creating 4 experiements.  
 
@@ -57,6 +57,8 @@ and 1 experiment with Support Vector Module and using the statistical data since
 We found that using the statistical data both models Sequential and SVM performed similarly.  Based on the report of the test data, the SVM model actually performed more reliably.
 
 ![Results](Images/best_models.png)
+
+![Powerpoint presentation](Urban%20Sound%20Presentation.pptx)
 
 
 ### Data sources:
