@@ -27,6 +27,6 @@ Colab Notebooks/train_data_exp4.ipynb
 
 	converted from exp4_report.json
 
-* exp4_report_scaled_json.csv
+* exp4_report_scaled_json_tocsv.csv
 
 	converted from exp4_report_scaled.json
