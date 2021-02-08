@@ -12,18 +12,19 @@ The Urban Sound Classification project looks at a dataset composed by J. Salamon
 
 ## Process:
 
-We attacked the project by understanding sound and analyzing what happens in ML when looking at the pure data.  What we found is that the data was too complex to work effectively in the models.  We found that the condition of overfitting was ocurring.  
-There are multiple ways of attacking overfitting. We were able to improve the modeling by adding the Drop-out and Regularization methods. 
-We continued with our attack on overfitting by creating 4 experiements.  
+We attacked the project by understanding sound and analyzing what happens in ML when looking at the pure data.  What we found is that the data was too complex to work effectively in the models and the condition of overfitting was ocurring.  
+To resolve the problems, we carried out four experiments by constructing three types of sample data from the sound files.
+The works are organized as following:
 
-* Three experiments using Sequential deep learning with different augmented data as the input 
-	1) Use the average of the vectors minimizing the vecor from 13 by 44 to 1 by 40.
-	2) Maintaining the full shape of the MFCC, but adjusting the other model inputs to see the impact
-	3) Using statistical values of the array reducing it to 30 x 6) 
+	* Colab Notebooks/ : python codes for data processing and training experiment
 	
-* One experiment with Support Vector Module and using the statistical data since that was the of the Sequential experiements
+	* Data/ : csv, json files of three types of MFCC data
+	
+	* Jupyter Notebooks/ : python codes for extracting sound features
+	
+	* Results/ : the training accuracy results for each experiment
 
-The overall diagram for coding is as following:
+The overall diagram for the coding is as following:
 ![Diagram](Images/Sound-Data-Overall-Processing.jpeg)
 
 
