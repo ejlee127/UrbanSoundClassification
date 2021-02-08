@@ -16,13 +16,13 @@ We attacked the project by understanding sound and analyzing what happens in ML 
 To resolve the problems, we carried out four experiments by constructing three types of sample data from the sound files.
 The works are organized as following:
 
-	* Colab Notebooks/ : python codes for data processing and training experiment
+* Colab Notebooks/ : python codes for data processing and training experiment
 	
-	* Data/ : csv, json files of three types of MFCC data
+* Data/ : csv, json files of three types of MFCC data
 	
-	* Jupyter Notebooks/ : python codes for extracting sound features
+* Jupyter Notebooks/ : python codes for extracting sound features
 	
-	* Results/ : the training accuracy results for each experiment
+* Results/ : the training accuracy results for each experiment
 
 The overall diagram for the coding is as following:
 ![Diagram](Images/Sound-Data-Overall-Processing.jpeg)
