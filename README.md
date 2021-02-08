@@ -12,34 +12,9 @@ The Urban Sound Analysis project looks at a dataset composed by J. Salamon, C. J
 
 ## Process:
 
-We attacked the project by understanding sound and analyzing what happens in ML when looking at the pure data.  What we found is that the data was too complex to work effectively in the models.  We found that the condition of overfitting was ocurring.  This can be seen in the following  charts.  Where you see overfitting is on the error graph showing a large difference between the errors on the training versus the test.  Each sound file gets converted into an MFC vector which contains an array shape of 13, 44
-
-![Overfitting](Images/Experiment%202/neuron128.png)
-
-There are multiple ways of attacking overfitting.
-
-1) Change the architecture
-	Adjust the neurons
-	Adjust the number of layers
-2) Data Augmentation
-	Increase data input
-	Apply transformation
-	reducing vector size
-	statistics
-3) Early stopping
-4) Drop-out
-	Randomly drop neurons while training
-	Increases network robustness
-5) Regularization
-	Adds penalty to errors
-	Punish large weights
-	L1 and L2 concepts
-
-By adding the last two Drop-out and Regularization methods we were able to improve the modeling.  We use regularization L2 at 0.001 and dropout of .4 in this example.  
-
-![Overfitting results](Images/Experiment%202/neuron128(of).png)
-
-With this knowledge we continued with our attack on overfitting by creating 4 experiements.  
+We attacked the project by understanding sound and analyzing what happens in ML when looking at the pure data.  What we found is that the data was too complex to work effectively in the models.  We found that the condition of overfitting was ocurring.  
+There are multiple ways of attacking overfitting. We were able to improve the modeling by adding the Drop-out and Regularization methods. 
+We continued with our attack on overfitting by creating 4 experiements.  
 
 * Three experiments using Sequential deep learning with different augmented data as the input 
 	1) Use the average of the vectors minimizing the vecor from 13 by 44 to 1 by 40.
@@ -48,15 +23,10 @@ With this knowledge we continued with our attack on overfitting by creating 4 ex
 	
 * One experiment with Support Vector Module and using the statistical data since that was the of the Sequential experiements
 
-![Examples](Images/Experiments.png)
+The detailed process and results are deployed at the page [https://ejlee127.github.io/UrbanSoundML/](https://ejlee127.github.io/UrbanSoundML/)
 
-## Results:
-
-We found that using the statistical data both models Sequential and SVM performed similarly.  Based on the report of the test data, the SVM model actually performed more reliably.
-
-![Results](Images/best_models.png)
-
-[Powerpoint presentation](Urban%20Sound%20Presentation.pptx)
+The overall diagram for coding is as following:
+![Diagram](Images/Sound-Data-Overall-Processing.jpeg)
 
 
 ### Data sources:
