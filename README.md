@@ -1,8 +1,6 @@
-# Urban Sound Analysis using Machine Learning
+# Urban Sound Classification using Machine Learning
 
-The Urban Sound Analysis project looks at a dataset composed by J. Salamon, C. Jacoby and J. P. Bello, "A Dataset and Taxonomy for Urban Sound Research", 22nd ACM International Conference on Multimedia, Orlando USA, Nov. 2014.  We took the dataset and ran it through librosa libraries to convert the wav files into MFCC files.  The Mel-Frequency Cepstral Coefficients (MFCC) is a way of capturing the spectrun of the voice (phoneme) so that it can used in voice recognition and machine learning.  From the MFCCs we built a models through 2 different Machine Learning techniques (Sequential deep learning and Support Vector Machine).  The initial throught was that the Sequential deep learning model would provide the best model.  The following information provides a view of our process and what results we came up with.
-
-![MFCC Example](Images/MFCCs_duration_4sec.png)
+The Urban Sound Analysis project looks at a dataset composed by J. Salamon, C. Jacoby and J. P. Bello, "A Dataset and Taxonomy for Urban Sound Research" generated in 2014.  We took the dataset and ran it through librosa libraries to convert the wav files into MFCC files.  The Mel-Frequency Cepstral Coefficients (MFCC) is a way of capturing the spectrun of the voice (phoneme) so that it can be used in voice recognition and machine learning.  From the MFCCs we built models through 2 different Machine Learning techniques (Sequential deep learning and Support Vector Machine).  The initial thought was that the Sequential deep learning model would provide the best model.  The following information provides a view of our process and what results we came up with.
 
 ## Team members:
 
@@ -18,7 +16,7 @@ We attacked the project by understanding sound and analyzing what happens in ML 
 
 ![Overfitting](Images/Experiment%202/neuron128.png)
 
-There was multiple ways of attacking overfitting.
+There are multiple ways of attacking overfitting.
 
 1) Change the architecture
 	Adjust the neurons
@@ -37,18 +35,18 @@ There was multiple ways of attacking overfitting.
 	Punish large weights
 	L1 and L2 concepts
 
-By adding the last two Drop-out and Regularization mthods we were able to improve the modeling.  We using regularization L2 at 0.001 and dropout of .4 in this example.
+By adding the last two Drop-out and Regularization methods we were able to improve the modeling.  We use regularization L2 at 0.001 and dropout of .4 in this example.  
 
 ![Overfitting results](Images/Experiment%202/neuron128(of).png)
 
 With this knowledge we continued with our attack on overfitting by creating 4 experiements.  
 
-3 using Sequential deep learning with different augmented data as the input 
+* Three experiments using Sequential deep learning with different augmented data as the input 
 	1) Use the average of the vectors minimizing the vecor from 13 by 44 to 1 by 40.
 	2) Maintaining the full shape of the MFCC, but adjusting the other model inputs to see the impact
 	3) Using statistical values of the array reducing it to 30 x 6) 
 	
-and 1 experiment with Support Vector Module and using the statistical data since that was the of the Sequential experiements
+* One experiment with Support Vector Module and using the statistical data since that was the of the Sequential experiements
 
 ![Examples](Images/Experiments.png)
 
@@ -58,7 +56,7 @@ We found that using the statistical data both models Sequential and SVM performe
 
 ![Results](Images/best_models.png)
 
-![Powerpoint presentation](Urban%20Sound%20Presentation.pptx)
+[Powerpoint presentation](Urban%20Sound%20Presentation.pptx)
 
 
 ### Data sources:
